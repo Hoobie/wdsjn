@@ -1,0 +1,1 @@
+-e git+https://github.com/kgadek/plpy3.git#egg=plpy3
