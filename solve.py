@@ -100,9 +100,9 @@ if __name__ == '__main__':
     # Rapp-Wettler algorithm
     for cooccurence, freq in cooccurence_freq.items():
         strength = 0
-        neighbour_freq = words_freq[cooccurence]
-        if neighbour_freq > BETA * total_no:
-            strength = freq / pow(neighbour_freq, ALFA)
+        neighbor_freq = words_freq[cooccurence]
+        if neighbor_freq > BETA * total_no:
+            strength = freq / pow(neighbor_freq, ALFA)
         else:
             strength = freq / (BETA * total_no)
         associative_strength[cooccurence] = strength
